@@ -21,11 +21,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: 'var(--font-sans)',
-        serif: 'var(--font-serif)'
-      }
+        sans: "var(--font-sans)",
+        serif: "var(--font-serif)",
+      },
     },
   },
   plugins: [],
-}
-
+};
