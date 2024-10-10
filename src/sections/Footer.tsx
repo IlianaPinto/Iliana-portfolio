@@ -25,7 +25,7 @@ export const Footer = () => {
           <nav className="flex flex-col md:flex-row items-center gap-8">
             {footerLinks.map((link) => (
               <a
-                href="#"
+                href={link.href}
                 key={link.title}
                 className="inline-flex items-center gap-1.5"
               >
