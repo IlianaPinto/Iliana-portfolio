@@ -1,7 +1,7 @@
 "use client";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-import bookImage from "@/assets/images/book-cover.png";
+import bookImage from "@/assets/images/book.png";
 import Image from "next/image";
 import JavascriptIcon from "@/assets/icons/square-js.svg";
 import ReactIcon from "@/assets/icons/react.svg";
@@ -168,7 +168,6 @@ export const AboutSection = () => {
                 <Image
                   src={smileMemoji}
                   alt="smiling memoji"
-                  // layout="responsive"
                   width={69}
                   height={69}
                 />

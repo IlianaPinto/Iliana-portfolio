@@ -48,7 +48,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 mt-24">
+    <section className="py-20 lg:py-28">
       <div className="container">
         <div className="flex justify-center">
           <p
@@ -66,7 +66,8 @@ export const ProjectsSection = () => {
           className="text-center md:text-lg lg:text-xl text-white/60 
         mt-4 max-w-md mx-auto"
         >
-          See how I transform concepts into engaging digital experiences.
+          Discover how I bring ideas to life through captivating digital
+          solutions.
         </p>
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, projectIndex) => (

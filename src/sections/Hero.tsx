@@ -125,7 +125,7 @@ export const HeroSection = () => {
             alt="Emoji Waving"
             unoptimized
           />
-          <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+          <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg  z-20">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
@@ -133,24 +133,30 @@ export const HeroSection = () => {
               Available for new challenges
             </div>
           </div>
-          <div className="max-w-lg mx-auto">
+          <div className="max-w-lg mx-auto z-20">
             <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-              Building Exceptional User Experiences
+              Bringing Ideas to Life with Code
             </h1>
             <p className="mt-4 text-center text-white/60 md:text-lg">
-              Fullstack Developer with experience in web development,
-              microservices, and databases, passionate about problem-solving.
+              I'm a full-stack developer with a passion for crafting
+              high-quality web applications
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+          <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-20">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+            >
               <span className="font-semibold">Explore My Work</span>
               <ArrowDown width={16} height={16} />
-            </button>
-            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+            </a>
+            <a
+              href="mailto:iliana.pinto04@gmail.com"
+              className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+            >
               <span>👋</span>
               <span className="font-semibold">Let's Connect</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
