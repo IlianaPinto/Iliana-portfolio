@@ -3,7 +3,13 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import bookImage from "@/assets/images/book.png";
 import Image from "next/image";
-import JavascriptIcon from "@/assets/icons/square-js.svg";
+import TypescriptIcon from "@/assets/icons/typescript.svg";
+import OracleIcon from "@/assets/icons/oracle.svg";
+import MongodbIcon from "@/assets/icons/mongodb.svg";
+import PostgresqlIcon from "@/assets/icons/postgresql.svg";
+import VueIcon from "@/assets/icons/vue.svg";
+import AngularIcon from "@/assets/icons/angular.svg";
+import NetCoreIcon from "@/assets/icons/dot-net-core.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/ar-emoji-arms-crossed-white.png";
@@ -15,7 +21,7 @@ import { useRef } from "react";
 const toolboxItems = [
   {
     title: "Typescript",
-    iconType: JavascriptIcon,
+    iconType: TypescriptIcon,
   },
   {
     title: "React",
@@ -23,27 +29,27 @@ const toolboxItems = [
   },
   {
     title: "Angular",
-    iconType: JavascriptIcon,
+    iconType: AngularIcon,
   },
   {
     title: "VueJs",
-    iconType: JavascriptIcon,
+    iconType: VueIcon,
   },
   {
-    title: ".Net Core",
-    iconType: JavascriptIcon,
+    title: ".Net",
+    iconType: NetCoreIcon,
   },
   {
     title: "PostgreSQL",
-    iconType: JavascriptIcon,
+    iconType: PostgresqlIcon,
   },
   {
     title: "MongoDB",
-    iconType: JavascriptIcon,
+    iconType: MongodbIcon,
   },
   {
     title: "Oracle",
-    iconType: JavascriptIcon,
+    iconType: OracleIcon,
   },
 ];
 
