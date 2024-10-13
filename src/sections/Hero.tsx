@@ -1,7 +1,6 @@
 import Image from "next/image";
 import aremojiImage from "@/assets/images/ar-emoji-waving-3-unscreen.gif";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
