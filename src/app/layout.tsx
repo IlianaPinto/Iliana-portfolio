@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Iliana's Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  // description: "Created with the help of Frontend Tribe",
 };
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
