@@ -16,7 +16,7 @@ const experiences = [
     company: "Hero Unit",
     location: "Nashville, TN",
     position: "Fullstack Developer",
-    years: "March 2021 - May 2024",
+    years: "October 2020 - March 2021",
     description:
       "Worked with teams to improve user experience and system stability, implemented tools for better data insights, integrated software for automated workflows, and provided technical support.",
   },
