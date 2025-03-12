@@ -5,21 +5,21 @@ export const Header = () => {
         <a href="#home" className="nav-item">
           Home
         </a>
-        {/* <a href="#projects" className="nav-item">
+        <a href="#projects" className="nav-item">
           Projects
-        </a> */}
+        </a>
         <a href="#experience" className="nav-item">
           Experience
         </a>
         <a href="#about" className="nav-item">
           About
         </a>
-        <a
+        {/* <a
           href="#contact"
           className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
         >
           Contact
-        </a>
+        </a> */}
       </nav>
     </div>
   );
