@@ -2,24 +2,23 @@
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Reveal } from "@/components/Reveal";
+import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 
 const experiences = [
   {
     company: "Acklen Avenue",
-    location: "Nashville, TN",
+    location: "Remote",
     position: "Fullstack Developer",
-    years: "March 2021 - May 2024",
-    description:
-      "Improved system performance and scalability by modernizing codebases and implementing microservices. Developed automated solutions to streamline processes and collaborated with teams to deliver high-quality projects while resolving technical issues.",
-  },
-  {
-    company: "Hero Unit",
-    location: "Nashville, TN",
-    position: "Fullstack Developer",
-    years: "October 2020 - March 2021",
-    description:
-      "Worked with teams to improve user experience and system stability, implemented tools for better data insights, integrated software for automated workflows, and provided technical support.",
-  },
+    years: "October 2021 - May 2024",
+    descriptions: [
+      { title: "Transformed legacy codebase to microservices architecture." },
+      { title: "Integrated automated workflows and cross-app data sync." },
+      { title: "Reduced technical debt and added features." },
+      { title: "Collaborated with clients to align tech solutions with business goals." },
+      { title: "Participated in agile cycles and contributed to code and technical reviews." },
+      { title: "Provided technical support to ensure quick issue resolution." },
+    ],
+   },
 ];
 export const ExperienceSection = () => {
   return (
@@ -29,10 +28,10 @@ export const ExperienceSection = () => {
           eyebrow="Experience"
           title="My Journey Into Web Development"
         />
-        <div className="flex flex-col mt-10 mt-20 gap-20">
+        <div className="flex flex-col mt-20 w-full">
           {experiences.map((experience, index) => (
-            <Reveal key={index}>
-              <Card className="px-8 pt-8 pt-12 px-10 pt-16 pb-16">
+            <Reveal key={index} width="100%">
+              <Card className="w-full px-10 py-16">
                 <div className="flex flex-col">
                   <div className="grid grid-cols-2 grid-cols-2">
                     <div
@@ -54,13 +53,24 @@ export const ExperienceSection = () => {
                     <div className="font-serif text-xl">
                       {experience.position}
                     </div>
-                    {/* <div className="text-right font-serif text-xl">
-                    {experience.location}
-                  </div> */}
+                    <div className="text-right font-serif text-xl">
+                      {experience.location}
+                    </div>
                   </div>
-                  <div className="pt-4 text-white/60">
-                    {experience.description}
-                  </div>
+                  <ul className="flex flex-col gap-4 mt-4 md:mt-5">
+                    {experience.descriptions.map((result, index) => (
+                      <Reveal key={index}>
+                        <li
+                        className="flex gap-2 text-sm md:text-base text-white/60"
+                        key={result.title}
+                      >
+                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <span>{result.title}</span>
+                      </li>
+                      </Reveal>
+                      
+                    ))}
+                  </ul>
                 </div>
               </Card>
             </Reveal>

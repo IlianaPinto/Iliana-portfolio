@@ -82,7 +82,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank">
                     <button
                       className="bg-white text-gray-950 h-12 w-full md:w-auto
                 rounded-xl font-semibold inline-flex items-center px-8

@@ -10,6 +10,7 @@ import PostgresqlIcon from "@/assets/icons/postgresql.svg";
 import VueIcon from "@/assets/icons/vue.svg";
 import AngularIcon from "@/assets/icons/angular.svg";
 import NetCoreIcon from "@/assets/icons/dot-net-core.svg";
+import JavaIcon from "@/assets/icons/java.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/ar-emoji-arms-crossed-white.png";
@@ -38,6 +39,10 @@ const toolboxItems = [
   {
     title: ".Net",
     iconType: NetCoreIcon,
+  },
+  {
+    title: "Java",
+    iconType: JavaIcon,
   },
   {
     title: "PostgreSQL",

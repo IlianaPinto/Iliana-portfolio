@@ -38,7 +38,7 @@ export const ContactSection = () => {
             </div>
             <div>
               <a
-                href="/Iliana-Pinto-Resume.pdf"
+                href="/Iliana_Pinto_Resume.pdf"
                 download="Iliana-Pinto-Resume.pdf"
                 className="text-white bg-gray-900 inline-flex 
             items-center px-6 h-12 rounded-xl gap-2 w-max border
