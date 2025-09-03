@@ -8,17 +8,39 @@ const experiences = [
   {
     company: "Acklen Avenue",
     location: "Remote",
-    position: "Fullstack Developer",
+    position: "Jr Fullstack Developer",
     years: "October 2021 - May 2024",
     descriptions: [
       { title: "Transformed legacy codebase to microservices architecture." },
       { title: "Integrated automated workflows and cross-app data sync." },
       { title: "Reduced technical debt and added features." },
-      { title: "Collaborated with clients to align tech solutions with business goals." },
-      { title: "Participated in agile cycles and contributed to code and technical reviews." },
+      {
+        title:
+          "Collaborated with clients to align tech solutions with business goals.",
+      },
+      {
+        title:
+          "Participated in agile cycles and contributed to code and technical reviews.",
+      },
       { title: "Provided technical support to ensure quick issue resolution." },
     ],
-   },
+  },
+  {
+    company: "Grupo Vision",
+    location: "Honduras, Tegucigalpa",
+    position: "Mid Fullstack Developer",
+    years: "June 2025 - Present",
+    descriptions: [
+      {
+        title:
+          "Performed library upgrades to address security vulnerabilities and refactored code.",
+      },
+      {
+        title:
+          "Built new features based on customer requirements, improving system functionality.",
+      },
+    ],
+  },
 ];
 export const ExperienceSection = () => {
   return (
@@ -31,7 +53,7 @@ export const ExperienceSection = () => {
         <div className="flex flex-col mt-20 w-full">
           {experiences.map((experience, index) => (
             <Reveal key={index} width="100%">
-              <Card className="w-full px-10 py-16">
+              <Card className="w-full px-10 py-16 mb-20">
                 <div className="flex flex-col">
                   <div className="grid grid-cols-2 grid-cols-2">
                     <div
@@ -61,14 +83,13 @@ export const ExperienceSection = () => {
                     {experience.descriptions.map((result, index) => (
                       <Reveal key={index}>
                         <li
-                        className="flex gap-2 text-sm md:text-base text-white/60"
-                        key={result.title}
-                      >
-                        <CheckCircleIcon className="size-5 md:size-6" />
-                        <span>{result.title}</span>
-                      </li>
+                          className="flex gap-2 text-sm md:text-base text-white/60"
+                          key={result.title}
+                        >
+                          <CheckCircleIcon className="size-5 md:size-6" />
+                          <span>{result.title}</span>
+                        </li>
                       </Reveal>
-                      
                     ))}
                   </ul>
                 </div>
